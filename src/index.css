@@ -6,7 +6,14 @@
 #root {
   width: 100vw;
   height: 100vh;
-  background: radial-gradient(#5a47ce, #232323 80%);
+  /*background: radial-gradient(#5a47ce, #232323 80%);*/
+  background: linear-gradient(
+    to bottom,
+    #FFD700 50%, /* Amarillo */
+    #0033A0 50%, /* Azul */
+    #0033A0 75%, /* Azul */
+    #C8102E 75%  /* Rojo */
+  );
 }
 
 body {

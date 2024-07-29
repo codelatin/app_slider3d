@@ -2,28 +2,28 @@ import { atom, useAtom } from "jotai";
 import { useEffect } from "react";
 
 const pictures = [
-  "DSC00680",
-  "DSC00933",
-  "DSC00966",
-  "DSC00983",
-  "DSC01011",
-  "DSC01040",
-  "DSC01064",
-  "DSC01071",
-  "DSC01103",
-  "DSC01145",
-  "DSC01420",
-  "DSC01461",
-  "DSC01489",
-  "DSC02031",
-  "DSC02064",
+  "colombia1",
+  "colombia2",
+  "colombia3",
+  "colombia4",
+  "colombia5",
+  "colombia6",
+  "colombia7",
+  "colombia8",
+  "colombia9",
+  "colombia10",
+  "colombia11",
+  "colombia12",
+  "colombia13",
+  "colombia14",
+  "colombia15",
   "DSC02069",
 ];
 
 export const pageAtom = atom(0);
 export const pages = [
   {
-    front: "book-cover",
+    front: "colombia16",
     back: pictures[0],
   },
 ];
@@ -36,7 +36,7 @@ for (let i = 1; i < pictures.length - 1; i += 2) {
 
 pages.push({
   front: pictures[pictures.length - 1],
-  back: "book-back",
+  back: "colombia16",
 });
 
 export const UI = () => {
@@ -52,9 +52,9 @@ export const UI = () => {
       <main className=" pointer-events-none select-none z-10 fixed  inset-0  flex justify-between flex-col">
         <a
           className="pointer-events-auto mt-10 ml-10"
-          href="https://lessons.wawasensei.dev/courses/react-three-fiber"
+          href="https://codelatin-colombia.online/"
         >
-          <img className="w-20" src="/images/wawasensei-white.png" />
+          <img className="w-20" src="/images/colombia1.png" />
         </a>
         <div className="w-full overflow-auto pointer-events-auto flex justify-center">
           <div className="overflow-auto flex items-center gap-4 max-w-full p-10">
@@ -79,7 +79,7 @@ export const UI = () => {
               }`}
               onClick={() => setPage(pages.length)}
             >
-              Back Cover
+              Contraportada
             </button>
           </div>
         </div>
@@ -89,54 +89,54 @@ export const UI = () => {
         <div className="relative">
           <div className="bg-white/0  animate-horizontal-scroll flex items-center gap-8 w-max px-8">
             <h1 className="shrink-0 text-white text-10xl font-black ">
-              Wawa Sensei
+              Juan Codelatn 2024
             </h1>
             <h2 className="shrink-0 text-white text-8xl italic font-light">
-              React Three Fiber
+              App Con Reactjs
             </h2>
             <h2 className="shrink-0 text-white text-12xl font-bold">
               Three.js
             </h2>
             <h2 className="shrink-0 text-transparent text-12xl font-bold italic outline-text">
-              Ultimate Guide
+              Colombia
             </h2>
             <h2 className="shrink-0 text-white text-9xl font-medium">
-              Tutorials
+              Comunidad
             </h2>
             <h2 className="shrink-0 text-white text-9xl font-extralight italic">
-              Learn
+              De Programadores
             </h2>
             <h2 className="shrink-0 text-white text-13xl font-bold">
-              Practice
+              En
             </h2>
             <h2 className="shrink-0 text-transparent text-13xl font-bold outline-text italic">
-              Creative
+             Latinoamerica
             </h2>
           </div>
           <div className="absolute top-0 left-0 bg-white/0 animate-horizontal-scroll-2 flex items-center gap-8 px-8 w-max">
             <h1 className="shrink-0 text-white text-10xl font-black ">
-              Wawa Sensei
+              juan Quintero
             </h1>
             <h2 className="shrink-0 text-white text-8xl italic font-light">
-              React Three Fiber
+             Codelatin
             </h2>
             <h2 className="shrink-0 text-white text-12xl font-bold">
-              Three.js
+              Comunidad
             </h2>
             <h2 className="shrink-0 text-transparent text-12xl font-bold italic outline-text">
-              Ultimate Guide
+              De
             </h2>
             <h2 className="shrink-0 text-white text-9xl font-medium">
-              Tutorials
+              Programadores
             </h2>
             <h2 className="shrink-0 text-white text-9xl font-extralight italic">
-              Learn
+              EN
             </h2>
             <h2 className="shrink-0 text-white text-13xl font-bold">
-              Practice
+              Latinoamerica
             </h2>
             <h2 className="shrink-0 text-transparent text-13xl font-bold outline-text italic">
-              Creative
+              2024
             </h2>
           </div>
         </div>
